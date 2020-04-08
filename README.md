@@ -1,6 +1,7 @@
 # gulpScss_browserSync
 Сборка SCSS и browser sync
-
+скачиваем в любую папку  
+выбираем папку в теминале например cd c:/sync  
 npm i  
 browser-sync  
 gulp default  
