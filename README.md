@@ -19,7 +19,7 @@ gulp default
     $('body').append(link);
     setTimeout(function(){
       $('[data-quck-scss]:not([data-quck-scss="'+ count +'"])').remove();
-    }, 100)
+    }, 500)
   }
   setInterval(function(){
      CSSLoad('http://192.168.0.194:3000/css/main.css');
