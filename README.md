@@ -4,6 +4,9 @@
 npm i  
 browser-sync  
 gulp default  
+
+***
+скрипт на сайт для динамический стилей  
 <script>
   var count = 0;
   function CSSLoad(file){
@@ -11,8 +14,9 @@ gulp default
     link.setAttribute("rel", "stylesheet");
     link.setAttribute("type", "text/css");
     link.setAttribute("href", file);
+    count++;
     link.setAttribute("data-quck-scss", count);
-    $('head').append(link);
+    $('body').append(link);
     setTimeout(function(){
       $('[data-quck-scss]:not([data-quck-scss="'+ count +'"])').remove();
     }, 100)
